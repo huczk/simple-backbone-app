@@ -1,0 +1,42 @@
+{
+  "books": [
+    {
+      "author": "Nick Bon",
+      "title": "Bulk",
+      "isbn": "1236453795732",
+      "publisher": "Jak",
+      "year": "1998",
+      "id": "6gYU67thZ"
+    },
+    {
+      "author": "Juri Dostoyewski",
+      "title": "Where and How",
+      "isbn": "1232879427432",
+      "publisher": "Rokict",
+      "year": "1918",
+      "id": "FUYhgiks7"
+    }
+  ],
+  "authors": [
+    {
+      "fullName": "Nick Bon",
+      "id": "Sk6QbNM3-"
+    },
+    {
+      "fullName": "Juri Dostoyewski",
+      "id": "SJfV-NM2b"
+    }
+  ],
+  "publishers": [
+    {
+      "name": "Jak",
+      "year": "1991",
+      "id": "H13rClGhW"
+    },
+    {
+      "name": "Rokitc",
+      "year": "1916",
+      "id": "S1WP0eznb"
+    }
+  ]
+}
