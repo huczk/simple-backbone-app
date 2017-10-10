@@ -1,14 +1,14 @@
 // Backbone Collections
 var BooksCollection = Backbone.Collection.extend({
-	url: 'http://localhost:3000/books'
+  url: 'http://localhost:3000/books'
 });
 
 var AuthorsCollection = Backbone.Collection.extend({
-	url: 'http://localhost:3000/authors'
+  url: 'http://localhost:3000/authors'
 });
 
 var PublishersCollection = Backbone.Collection.extend({
-	url: 'http://localhost:3000/publishers'
+  url: 'http://localhost:3000/publishers'
 });
 
 // Instantiate a Collections

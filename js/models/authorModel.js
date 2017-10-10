@@ -4,7 +4,7 @@ var Author = Backbone.Model.extend({
     fullName: "",
   },
   url: 'http://localhost:3000/authors',
-  
+
   // Author validation - all model fields are required. If error - return it to a user.
   validate: function(attr, options) {
     let messages = [];

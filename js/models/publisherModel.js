@@ -5,7 +5,7 @@ var Publisher = Backbone.Model.extend({
     year: ""
   },
   url: 'http://localhost:3000/publishers',
-  
+
   // Publisher validation. If validation error - return it to a user.
   // All model fields are required and year of publisher can not be higher than current year.
   validate: function(attr, options) {

@@ -1,14 +1,14 @@
 // Backbone model for a Book
 var Book = Backbone.Model.extend({
   defaults: {
-		author: '',
-	  title: '',
-		isbn: '',
-		publisher: '',
-		year: ''
-	},
+    author: '',
+    title: '',
+    isbn: '',
+    publisher: '',
+    year: ''
+  },
   url: 'http://localhost:3000/books',
-  
+
   // Book validation. If validation error - return it to a user.
   // All model fields are required. Year of a book can not be higher than current year.
   // ISBN must be a Number and be 13 charaters long (if user pass ISBN with dashes - delete them).

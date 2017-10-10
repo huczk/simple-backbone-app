@@ -1,67 +1,67 @@
 // Backbone router for all views
 let MyRouter = Backbone.Router.extend({
-	routes: {
-		"": "booksPage",
-		"books": "booksPage",
+  routes: {
+    "": "booksPage",
+    "books": "booksPage",
     "addBook": "addBookPage",
     "editBook/(:id)": "editBookPage",
-		"authors": "authorsPage",
+    "authors": "authorsPage",
     "addAuthor": "addAuthorPage",
     "editAuthor/(:id)": "editAuthorPage",
-		"publishers": "publishersPage",
+    "publishers": "publishersPage",
     "addPublisher": "addPublisherPage",
     "editPublisher/(:id)": "editPublisherPage"
-	},
-	booksPage: function() {
+  },
+  booksPage: function() {
     $('.info').html('');
-		$('.thead').remove();
+    $('.thead').remove();
     $('.formContainer').html('');;
-		new BooksView();
-	},
-	authorsPage: function() {
+    new BooksView();
+  },
+  authorsPage: function() {
     $('.info').html('');
-		$('.thead').remove();
+    $('.thead').remove();
     $('.formContainer').html('');;
-		new AuthorsView();
-	},
-	publishersPage: function() {
+    new AuthorsView();
+  },
+  publishersPage: function() {
     $('.info').html('');
-		$('.thead').remove();
+    $('.thead').remove();
     $('.formContainer').html('');;
-		new PublishersView();
-	},
+    new PublishersView();
+  },
   addBookPage: function() {
-		$('.info').html('');
+    $('.info').html('');
     $('.lists').html('');
     $('.thead').html('');
     new AddBookPage();
   },
   addAuthorPage: function() {
-		$('.info').html('');
+    $('.info').html('');
     $('.lists').html('');
     $('.thead').html('');
     new AddAuthorPage();
   },
   addPublisherPage: function() {
-		$('.info').html('');
+    $('.info').html('');
     $('.lists').html('');
     $('.thead').html('');
     new AddPublisherPage();
   },
   editBookPage: function(id) {
-		$('.info').html('');
+    $('.info').html('');
     $('.lists').html('');
     $('.thead').html('');
     new EditBookPage({ id: id });
   },
   editAuthorPage: function(id) {
     $('.info').html('');
-		$('.lists').html('');
+    $('.lists').html('');
     $('.thead').html('');
     new EditAuthorPage({ id: id });
   },
   editPublisherPage: function(id) {
-		$('.info').html('');
+    $('.info').html('');
     $('.lists').html('');
     $('.thead').html('');
     new EditPublisherPage({ id: id });
